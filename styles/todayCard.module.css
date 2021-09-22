@@ -1,0 +1,29 @@
+.container {
+  background-color: #ffffff;
+  width: 550px;
+  height: 200px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+  transition: 0.3s;
+}
+
+.container:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+@media (max-width: 950px) {
+  .container {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+  }
+
+  .content p {
+    font-size: 2em;
+  }
+}
