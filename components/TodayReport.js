@@ -38,6 +38,13 @@ const TodayReport = ({
         disableGroupBy: true,
       },
       {
+        Header: "Department",
+        accessor: "department",
+        paginateExpandedRows: true,
+        disableFilters: true,
+        disableGroupBy: true,
+      },
+      {
         Header: "Health Issue",
         accessor: "health",
         disableSortBy: true,

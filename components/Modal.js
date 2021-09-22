@@ -28,11 +28,11 @@ const Modal = ({ show, onClose, staffDetails }) => {
               <strong>Name: </strong> {staffDetails[0].fullName}
             </p>
             <p>
-              <strong>Current number of days stayed: </strong>
-              {staffDetails.length}
+              <strong>Department: </strong>
+              {staffDetails[0].department}
             </p>
             <p>
-              <strong>Room No. : </strong> {staffDetails[0].roomNumber}
+              <strong>Staff ID: </strong> {staffDetails[0].staffId}
             </p>
           </div>
           <div>

@@ -22,8 +22,9 @@ export const getSheetList = async () => {
         timestamp: row[0],
         fullName: row[1],
         staffId: row[2],
-        health: row[3],
-        details: row[4] || null,
+        department: row[3],
+        health: row[4],
+        details: row[5] || null,
       }));
     }
   } catch (err) {

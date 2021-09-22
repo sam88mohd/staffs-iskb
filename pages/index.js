@@ -37,12 +37,17 @@ export default function Home({ sheets }) {
       {
         Header: "Staff ID",
         accessor: "staffId",
-        sortType: "alphanumeric",
         paginateExpandedRows: true,
       },
       {
         Header: "Name",
         accessor: "fullName",
+        disableSortBy: true,
+        paginateExpandedRows: true,
+      },
+      {
+        Header: "Department",
+        accessor: "department",
         disableSortBy: true,
         paginateExpandedRows: true,
       },
