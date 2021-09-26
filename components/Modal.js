@@ -28,7 +28,6 @@ const Modal = ({ show, onClose, staffDetails }) => {
               <strong>Name: </strong> {staffDetails[0].fullName}
             </p>
             <p>
-              test
               <strong>Department: </strong>
               {staffDetails[0].department}
             </p>

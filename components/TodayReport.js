@@ -3,6 +3,7 @@ import TodayCard from "./TodayCard";
 import styles from "../styles/todayReport.module.css";
 import Chart from "react-google-charts";
 import Table from "./Table";
+import TestChart from "./TestChart";
 
 const TodayReport = ({
   today,
@@ -82,7 +83,7 @@ const TodayReport = ({
             <p>{todayStaff.length}</p>
           </TodayCard>
         </div>
-        <div className={styles.chartContainer}>
+        {/* <div className={styles.chartContainer}>
           <Chart
             width="100%"
             height="400px"
@@ -124,7 +125,7 @@ const TodayReport = ({
               ["No", todayNo.length],
             ]}
           />
-        </div>
+        </div> */}
       </div>
       <div className={styles.yesHealthContainer}>
         <h3>Today&apos;s Reported Issue</h3>
@@ -141,6 +142,7 @@ const TodayReport = ({
             })}
           />
         )}
+        <TestChart />
       </div>
     </section>
   );
