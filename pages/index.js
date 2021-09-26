@@ -96,10 +96,14 @@ export default function Home({ sheets }) {
 
   const staffDetails = sheets.filter(
     (sheet) =>
-      (sheet.staffId === rowData?.values?.staffId &&
-        sheet.fullName === rowData?.values?.fullName) ||
-      sheet.staffId === rowData?.values?.staffId ||
-      sheet.fullName === rowData?.values?.fullName
+      sheet.department === rowData?.values?.department &&
+      sheet.fullName
+        .toLowerCase()
+        .includes(
+          rowData?.values?.fullName
+            .toLowerCase()
+            .slice(0, rowData?.values?.fullName.length - 1)
+        )
   );
 
   return (
